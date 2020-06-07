@@ -25,6 +25,7 @@ import { EntrepriseReclamationsComponent } from './entreprise-reclamations/entre
 import { EntrepriseReclamationsAddComponent } from './entreprise-Reclamations/entreprise-reclamations-add/entreprise-reclamations-add.component';
 import { EntrepriseReclamationsListComponent } from './entreprise-Reclamations/entreprise-reclamations-list/entreprise-reclamations-list.component';
 import { EntrepriseReclamationsEditComponent } from './entreprise-Reclamations/entreprise-reclamations-edit/entreprise-reclamations-edit.component';
+import { FrontComponent } from './front/front.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { EntrepriseReclamationsEditComponent } from './entreprise-Reclamations/e
     EntrepriseReclamationsAddComponent,
     EntrepriseReclamationsListComponent,
     EntrepriseReclamationsEditComponent,
+    FrontComponent,
   ],
   imports: [
     BrowserModule,

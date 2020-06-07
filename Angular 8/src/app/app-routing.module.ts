@@ -1,3 +1,4 @@
+import { FrontComponent } from './front/front.component';
 import { EntrepriseServicesComponent } from './entreprise-services/entreprise-services.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { AuthGuard } from './auth/auth.guard';
@@ -10,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { EntrepriseReclamationsComponent } from './entreprise-reclamations/entreprise-reclamations.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/user/login',pathMatch:'full'},
+  {path:'',redirectTo:'/front',pathMatch:'full'},
   {
     path: 'user', component: UserComponent,
     children: [
@@ -18,6 +19,7 @@ const routes: Routes = [
       { path: 'login', component: LoginComponent }
     ]
   },
+  {path:'front',component:FrontComponent},
   {path:'home',component:HomeComponent,canActivate:[AuthGuard]},
   {path:'services',component:EntrepriseServicesComponent,canActivate:[AuthGuard]},
   {path:'Reclamations',component:EntrepriseReclamationsComponent,canActivate:[AuthGuard]},

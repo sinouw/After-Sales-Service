@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav-bar',
@@ -12,10 +13,14 @@ export class SidenavBarComponent implements OnInit {
   adminMenuItemsList : string[] =  ["Profile","Services","Reclamations","Go to site"]
   selectedCompName : string =""
 
-  constructor() {}
+  constructor(private router : Router) {}
     ngOnInit() {
      
     }
 
+    onLogout() {
+      localStorage.removeItem('token');
+      this.router.navigate(['/user/login']);  
+    }
 
 }

@@ -8,5 +8,25 @@
             <a class="nav-link " routerLink="/services ">Services</a>
         </li>
     </ul> -->
-    <button class="btn btn-danger my-2 my-sm-0 " (click)="onLogout() ">Logout</button>
+    <ng-container *ngIf="isConnected;else elseBloc;">
+        <ul class="navbar-nav ml-auto" style="flex-direction: unset !important">
+            <li class="nav-item">
+                <button mat-mini-fab style="margin-right:30px" color="dark" routerLink="/home">
+                    <mat-icon routerLinkActive="router-link-active">person</mat-icon>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button mat-mini-fab style="margin-right:30px" color="dark" (click)="onLogout()">
+                    <mat-icon routerLinkActive="router-link-active">logout</mat-icon>
+                </button>
+                <!-- <button class="btn btn-dark my-2 my-sm-0" (click)="onLogout()">Logout</button> -->
+            </li>
+        </ul>
+    </ng-container>
+    <ng-template #elseBloc>
+        <!-- <button class="btn btn-danger my-2 my-sm-0 " routerLink="/user/login">Login</button> -->
+        <button mat-mini-fab style="margin-right:30px" color="dark" routerLink="/user/login">
+            <mat-icon routerLinkActive="router-link-active">logout</mat-icon>
+        </button>
+    </ng-template>
 </nav>

@@ -109,3 +109,17 @@ C:\Users\hilel attia\source\repos\After-Sales-Service\WebAPI\WebAPI\obj\Debug\ne
 C:\Users\hilel attia\source\repos\After-Sales-Service\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
 C:\Users\hilel attia\source\repos\After-Sales-Service\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 C:\Users\hilel attia\source\repos\After-Sales-Service\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.deps.json
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.json
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.dev.json
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.dll
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.pdb
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cache
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cs
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfo.cs
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
+C:\Users\Yassine Ouni\Documents\Service_Apres_Vente\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb

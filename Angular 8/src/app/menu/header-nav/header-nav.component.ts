@@ -7,10 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header-nav.component.css']
 })
 export class HeaderNavComponent implements OnInit {
+  isConnected: boolean = false;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
+    let token = localStorage.getItem('token')
+    if(token)
+    this.isConnected = true;
   }
 
   onLogout() {
