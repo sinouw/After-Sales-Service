@@ -1,0 +1,48 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 90%;">
+  <!-- Position Column -->
+  <ng-container matColumnDef="Name">
+      <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="Email">
+      <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="City">
+      <mat-header-cell *matHeaderCellDef> City </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.city}} </mat-cell>
+  </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Message">
+        <mat-header-cell *matHeaderCellDef> Message </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.message}} </mat-cell>
+    </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="creationDate">
+      <mat-header-cell *matHeaderCellDef> creationDate </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.creationDate | date : 'short'}} </mat-cell>
+  </ng-container>
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="actions">
+      <mat-header-cell mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+      <mat-cell *matCellDef="let element;let i= index;">
+
+          <button mat-icon-button color="primary" (click)="editReclamation(element,i)">
+              <mat-icon>home</mat-icon>
+          </button>
+
+          <button color="warn" mat-icon-button (click)="deleteReclamation(element.id,i)">
+              <mat-icon >delete</mat-icon>
+          </button>
+      </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

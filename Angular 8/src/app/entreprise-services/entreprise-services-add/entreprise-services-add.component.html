@@ -1,0 +1,19 @@
+<mat-card>
+    <h4> Enter a new Service </h4>
+    <form [formGroup]="serviceFromBody" (ngSubmit)="submit()">
+        <div class="example-container">
+            <mat-form-field class="w-100 mb-3">
+                <input matInput placeholder="Label" formControlName="Label">
+                <mat-error *ngIf="serviceFromBody.get('Label').hasError('required') && serviceFromBody.get('Label').touched">This field should not be empty.</mat-error>
+            </mat-form-field>
+            <mat-form-field class="w-100 mb-3">
+                <textarea matInput placeholder="Description" formControlName="Description" rows="5" cols="33"></textarea>
+                <mat-error *ngIf="serviceFromBody.get('Description').hasError('required') && serviceFromBody.get('Description').touched">This field should not be empty.</mat-error>
+            </mat-form-field>
+            <!-- select owner -->
+
+            <button mat-raised-button color="dark" [disabled]="serviceFromBody.invalid">Save</button>
+        </div>
+        <!-- example-container -->
+    </form>
+</mat-card>

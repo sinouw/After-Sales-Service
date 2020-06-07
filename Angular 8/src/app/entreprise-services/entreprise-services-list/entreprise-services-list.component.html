@@ -1,0 +1,42 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 90%;">
+    <!-- Position Column -->
+    <ng-container matColumnDef="label">
+        <mat-header-cell *matHeaderCellDef> label </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.label}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="description">
+        <mat-header-cell *matHeaderCellDef> description </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.description}} </mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <!-- <ng-container matColumnDef="imageUrl">
+        <mat-header-cell *matHeaderCellDef> imageUrl </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.imageUrl}} </mat-cell>
+    </ng-container> -->
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="creationDate">
+        <mat-header-cell *matHeaderCellDef> creationDate </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.creationDate | date : 'short'}} </mat-cell>
+    </ng-container>
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="actions">
+        <mat-header-cell mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+        <mat-cell *matCellDef="let element;let i= index;">
+
+            <button mat-icon-button color="primary" (click)="editService(element,i)">
+                <mat-icon>home</mat-icon>
+            </button>
+
+            <button color="warn" mat-icon-button (click)="deleteService(element.id,i)">
+                <mat-icon >delete</mat-icon>
+            </button>
+        </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

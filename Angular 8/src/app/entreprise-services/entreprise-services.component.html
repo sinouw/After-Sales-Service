@@ -1,0 +1,22 @@
+<app-header-nav></app-header-nav>
+<div class="row" style="margin-top: 0px !important">
+    <div class="col-2">
+        <app-sidenav-bar></app-sidenav-bar>
+    </div>
+    <div class="col">
+        <h1 class="jumbotron display-4">
+            Services
+        </h1>
+        <hr/>
+        <div class="row">
+            <div class="btn-group btn-group-toggle" *ngFor="let btnItem of buttonsList">
+                <button class="btn btn-dark" [ngClass]="{'active':selectedComp == btnItem}" (click)="selectComponent(btnItem)">
+                    {{btnItem}}
+                </button>
+            </div>
+        </div>
+        <app-entreprise-services-list *ngIf="selectedComp=='Services List'"></app-entreprise-services-list>
+        <app-entreprise-services-add *ngIf="selectedComp=='Add Service'"></app-entreprise-services-add>
+        <app-entreprise-services-edit [serviceBody]="serviceBody" *ngIf="selectedComp=='Edit Service' && serviceBody"></app-entreprise-services-edit>
+    </div>
+</div>
